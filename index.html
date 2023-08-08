@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="search-block">
+                <div class="search-input">
+                    <input
+                        type="text"
+                        id="movieName"
+                        placeholder="Write movie name"
+                    />
+                    <span class="clear-icon" onclick="clearInput()"
+                        >&#10006;</span
+                    >
+                </div>
+                <div id="search-button">
+                    <input type="button" name="" id="" value="search" />
+                </div>
+            </div>
+            <div class="movies-container">
+                <!-- орієнтовний вміст одного блока фільму -->
+                <!-- <div class="movie-item">
+                    <div class="item-picture">item-picture</div>
+                    <div class="item-name-block">
+                        <div class="item-name">item name </div>
+                    </div>
+                    <div class="item-type">item type</div>
+                    <div class="item-year">2005</div>
+                    <div class="item-more-details">More details</div>
+                </div> -->
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div> <!-- "затіняє все, крім модалки " -->
+        <div class="modal">
+            <div class="img-block"></div>
+            <div class="text-block">
+                <div class="title-block">
+                    <h2 class="title"></h2>
+                </div>
+                <p class="short-description"></p>
+                <p class="long-description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Porro animi sequi numquam, quas deserunt explicabo delectus
+                    tenetur quaerat inventore quibusdam similique vel fugit,
+                    impedit maiores nulla odio repudiandae dicta quia atque
+                    mollitia ex eligendi? Aperiam vel voluptatibus dolores
+                    voluptas libero dolorem, eveniet nostrum nam nemo
+                    repudiandae nisi odit facilis ducimus?
+                </p>
+                <p class="writers-block">
+                    <span class="bold">Written by: </span> <span class="writers"></span>
+                </p>
+                <p class="director-block">
+                    <span class="bold">Directed by: </span> 
+                    <span class="directedBy"></span>
+                </p>
+                <p class="starring-block">
+                    <span class="bold">Starring: </span>
+                    <span class="starring"></span>
+                </p>
+                <p class="boxOffice-block">
+                    <span class="bold">boxOffice: </span>
+                    <span class="boxOffice"></span>
+                </p>
+                <p class="awards-block">
+                    <span class="bold">Awards: </span>
+                    <span class="awards"></span>
+                </p>
+                <p class="ratings-block">
+                    <div class="bold">Ratings: </div>
+                    <div class="ratings"></div>
+                </p>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
